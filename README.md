@@ -3,7 +3,7 @@
 Open-source symbolic calculator for your [Atom](http://atom.io) editor with
 Markdown capabilities, inspired by [Calca](http://calca.io/).
 
-![atom-calca screencast demo gif](./atom-calca.gif)
+![atom-calca screencast demo gif](http://i.imgur.com/jXlaHwY.gif)
 
 ## Install
 
