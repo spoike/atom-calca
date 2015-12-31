@@ -1,0 +1,15 @@
+# This is a simple calca file
+
+Constants are as expected.
+
+  1 => 1
+
+Simple assignments are supported (at the moment order matters).
+
+  y = 20
+  x = 10 + y
+
+  4x + 3 => 123
+
+  x = 20
+  2x => 40

@@ -1,0 +1,16 @@
+{
+  "name": "atom-calca",
+  "main": "./lib/atom-calca",
+  "version": "0.0.0",
+  "description": "Provides symbolic calculator for your markdown files",
+  "keywords": [],
+  "repository": "https://github.com/spoike/atom-calca",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "algebra.js": "^0.2.5",
+    "lodash": "^3.10.1"
+  }
+}
