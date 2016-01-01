@@ -105,13 +105,10 @@ describe("lexer#tokenizeRow", () => {
     expect(tokens[2].toString()).toEqual("xtra long");
   });
 
-  // TODO: Extra long names with unicode letters
-  /*
   it("should be handle long names (with spaces in between) with unicode letters", () => {
     let tokens = tokenizeRow("x + xtrá loñg");
 
     expect(tokens[2].toString()).toEqual("xtrá loñg");
   });
-  */
 
 });
