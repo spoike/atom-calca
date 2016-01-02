@@ -65,6 +65,18 @@ describe("CalcaParser", () => {
       expect(answer).toBe("3");
     });
 
+    it("should provide answer to expression from previous line", () => {
+      parser.parseRow("1+2");
+      let answer = parser.parseRow("=>");
+      expect(answer).toBe("3");
+    });
+
+    it("should provide answer to the expression and assignment from previous line", () => {
+      parser.parseRow("x=1+2");
+      let answer = parser.parseRow("x =>");
+      expect(answer).toBe("3");
+    });
+
   });
 
 });
