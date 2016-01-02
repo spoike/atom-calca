@@ -1,6 +1,6 @@
 'use babel';
 
-const lexer = require('../lib/lexer');
+const lexer = require('../lib/parser/lexer');
 const tokenizeRow = lexer.tokenizeRow;
 
 // Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
