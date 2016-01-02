@@ -100,7 +100,6 @@ describe("lexer#tokenizeRow", () => {
 
   it("should handle long names (with spaces in between)", () => {
     let tokens = tokenizeRow("x + xtra long");
-    console.log(tokens);
 
     expect(tokens[2].toString()).toEqual("xtra long");
   });
