@@ -79,4 +79,14 @@ describe("CalcaParser", () => {
 
   });
 
+  describe("using assigned variable in simple expression", () => {
+
+    it("should provide answer", () => {
+      parser.parseRow("y=1+2");
+      let answer = parser.parseRow("x=y+3=>");
+      expect(answer).toBe("6");
+    });
+
+  });
+
 });
