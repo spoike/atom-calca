@@ -85,9 +85,9 @@ describe("lexer#tokenizeRow", () => {
   it("should be able to handle negative numbers", () => {
     let tokens = tokenizeRow("-1 + -2.0 - -3");
 
-    expect(tokens[0].toString()).toEqual("-1");
-    expect(tokens[2].toString()).toEqual("-2.0");
-    expect(tokens[4].toString()).toEqual("-3");
+    expect(tokens[0].toString()).toEqual("-");
+    expect(tokens[3].toString()).toEqual("-");
+    expect(tokens[6].toString()).toEqual("-");
   });
 
   it("should be able to tokenize unicode letters", () => {
