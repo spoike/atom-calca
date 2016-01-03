@@ -87,6 +87,13 @@ describe("CalcaParser", () => {
       expect(answer).toBe("6");
     });
 
+    it("should provide answer in reverse order", () => {
+      parser.parseRow("x=y+3");
+      parser.parseRow("y=1+2");
+      let answer = parser.parseRow("x=>");
+      expect(answer).toBe("6");
+    });
+
   });
 
 });
