@@ -15,7 +15,6 @@ describe("CalcaParser", () => {
   it("should ignore empty lines", () => {
     let answer = parser.parseRow("");
     expect(answer).toBeUndefined();
-    //expect(() => parser.parse("")).toThrow(new ParserError());
   });
 
   it("should ignore whitespaced lines", () => {
