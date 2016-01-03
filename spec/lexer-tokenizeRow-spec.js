@@ -110,4 +110,10 @@ describe("lexer#tokenizeRow", () => {
     expect(tokens[2].toString()).toEqual("xtrá loñg");
   });
 
+  it("should handle numbers with incomplete decimal", () => {
+    let tokens = tokenizeRow("1 + 2.");
+
+    expect(tokens[2].toString()).toEqual("2");
+  })
+
 });
