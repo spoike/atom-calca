@@ -94,6 +94,14 @@ describe("CalcaParser", () => {
       expect(answer).toBe("6");
     });
 
+    it("should handle answer for 3 expressions", () => {
+      parser.parseRow("x=y+3");
+      parser.parseRow("y=1+z");
+      parser.parseRow("z = 2");
+      let answer = parser.parseRow("x=>");
+      expect(answer).toBe("6");
+    });
+
   });
 
 });
