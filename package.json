@@ -1,7 +1,7 @@
 {
   "name": "atom-calca",
   "main": "./lib/atom-calca",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Provides symbolic calculator for your markdown files",
   "keywords": [],
   "repository": "https://github.com/spoike/atom-calca",
