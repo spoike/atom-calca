@@ -103,4 +103,16 @@ describe("CalcaParser", () => {
 
   });
 
+  describe("using incomplete expressions", () => {
+
+    it("should ignore incomplete assignments", () => {
+      parser.parseRow("a =");
+      parser.parseRow("x = a*2");
+      // shouldn't crash with TypeError
+      let answer = parser.parseRow("x =>");
+      expect(answer).toBe("2a"); // or 2 * a
+    });
+
+  });
+
 });
