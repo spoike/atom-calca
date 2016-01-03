@@ -115,4 +115,20 @@ describe("CalcaParser", () => {
 
   });
 
+  describe("using long names", () => {
+
+    it("should be able to parse long names", () => {
+      parser.parseRow("long name = 2");
+      let answer = parser.parseRow("long name =>");
+      expect(answer).toBe("2");
+    });
+
+    it("should be able to handle arithmetics", () => {
+      parser.parseRow("long name = 2");
+      let answer = parser.parseRow("long name + 2 =>");
+      expect(answer).toBe("4");
+    });
+
+  });
+
 });

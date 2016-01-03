@@ -1,15 +1,15 @@
-# This is a simple calca file
+# Budget
 
-Constants are as expected.
+expenses = rent + car + office + other
 
-  1 => 1
+  rent    = 750 + utils
+  utils   = 200
+  car     = 400
+  office  = 1300 + parking
+  parking = 120
+  other   = 1200
 
-Simple assignments are supported (at the moment order matters).
+expenses => 3970
 
-  y = 20
-  x = 10 + y
-
-  4x + 3 => 123
-
-  x = 20
-  2x => 40
+daily expenses = expenses/30
+  => 397/3
