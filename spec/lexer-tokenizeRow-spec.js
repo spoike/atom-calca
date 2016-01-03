@@ -114,6 +114,6 @@ describe("lexer#tokenizeRow", () => {
     let tokens = tokenizeRow("1 + 2.");
 
     expect(tokens[2].toString()).toEqual("2");
-  })
+  });
 
 });
