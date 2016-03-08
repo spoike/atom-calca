@@ -7,7 +7,8 @@ Markdown capabilities, inspired by [Calca][calca].
 
 ## Install
 
-Either in Atom's Preferences/Install Packages, or with `apm`:
+Install `atom-calca` either in Atom's Preferences/Install Packages, or with
+`apm` on the command-line:
 
 ```sh
 apm install atom-calca
