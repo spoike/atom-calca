@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "algebra.js": "^0.2.5",
-    "lodash": "^3.10.1",
+    "lodash": "^4.6.1",
     "xregexp": "^3.0.0"
   }
 }
