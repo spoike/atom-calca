@@ -1,13 +1,13 @@
 # atom-calca package
 
-Open-source symbolic calculator for your [Atom](http://atom.io) editor with
-Markdown capabilities, inspired by [Calca](http://calca.io/).
+Open-source symbolic calculator for your [Atom][atom] editor with
+Markdown capabilities, inspired by [Calca][calca].
 
-![atom-calca screencast demo gif](http://i.imgur.com/jXlaHwY.gif)
+![atom-calca screencast demo gif][screencast]
 
 ## Install
 
-Either in Atom's package manager, or with apm:
+Either in Atom's Preferences/Install Packages, or with `apm`:
 
 ```sh
 apm install atom-calca
@@ -22,4 +22,8 @@ Check the [examples/test.calca](examples/test.calca) file for working examples.
 
 ## License
 
-MIT. Read the [LICENSE.md](./LICENSE.md).
+MIT. Read the [LICENSE.md](./LICENSE.md) for more info.
+
+[atom]:       http://atom.io   "Atom Editor"
+[calca]:      http://calca.io/ "Calca Symbolic Editor"
+[screencast]: http://i.imgur.com/jXlaHwY.gif "atom-calca screencast demo gif"
