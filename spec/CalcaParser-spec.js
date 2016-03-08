@@ -131,4 +131,25 @@ describe("CalcaParser", () => {
 
   });
 
+  describe("decimal separator in answer", () => {
+
+    it("should use decimal separator when a decimal is given in the expressions", () => {
+      parser.parseRow("x = 2");
+      let answer = parser.parseRow("x + 10.25 =>");
+      expect(answer).toBe("12.25");
+    });
+
+    it("should use decimal separator when decimals are zeroes", () => {
+      parser.parseRow("x = 2.00");
+      let answer = parser.parseRow("x + 10 =>");
+      expect(answer).toBe("12.00");
+    });
+
+    it("should be able to handle unset variable", () => {
+      let answer = parser.parseRow("x + 10 =>");
+      expect(answer).toBe("x + 10");
+    });
+
+  });
+
 });
